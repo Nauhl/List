@@ -16,6 +16,7 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
@@ -32,6 +33,29 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Students" asp-action="ShowSearchForm">Search</a>
                         </li>
                     </ul>
+
+                    <div class="dropdown">
+                        <button class="btn btn-outline-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li class="dropdown-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="ScholarServices" asp-action="Index">ScholarServices</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Library" asp-action="Index">Library</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="StudentsServices" asp-action="Index">StudentsServices</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Finances" asp-action="Index">Finances</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Academy" asp-action="Index">Academy</a>
+                            </li>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>

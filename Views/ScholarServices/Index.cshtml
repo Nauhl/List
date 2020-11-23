@@ -1,0 +1,76 @@
+﻿@model IEnumerable<List.Models.student>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<li class="nav-item">
+    <a class="nav-link text-dark" asp-area="" asp-controller="Academy" asp-action="ShowSearchForm">Search</a>
+</li> 
+<br />
+<!-- <p>
+    <a asp-action="Create">Create New</a>
+</p> -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Matricula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Carrera)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Turno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Grado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Grupo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Matricula)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Carrera)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Turno)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Grado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Grupo)
+                </td>
+                <td>
+                    <!-- <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> | -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                        </label>
+                    </div>
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                    <!-- <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> -->
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

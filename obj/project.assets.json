@@ -8784,11 +8784,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nauhl\\Desktop\\list\\List\\List.csproj",
+      "projectUniqueName": "C:\\Users\\Nauhl\\Desktop\\list\\Lista\\List\\List.csproj",
       "projectName": "List",
-      "projectPath": "C:\\Users\\Nauhl\\Desktop\\list\\List\\List.csproj",
+      "projectPath": "C:\\Users\\Nauhl\\Desktop\\list\\Lista\\List\\List.csproj",
       "packagesPath": "C:\\Users\\Nauhl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nauhl\\Desktop\\list\\List\\obj\\",
+      "outputPath": "C:\\Users\\Nauhl\\Desktop\\list\\Lista\\List\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
